@@ -1,192 +1,193 @@
-
 /* RESET */
 
-*{
-box-sizing:border-box;
+* {
+  box-sizing: border-box;
 }
 
-body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#000;
-color:white;
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: white;
 }
 
 
 /* LOGO HEADER */
 
-.header-logo{
-width:100%;
-text-align:center;
-padding:10px 0;
-background:black;
+.header-logo {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background: black;
 }
 
-.header-logo img{
-max-height:70px;
-width:auto;
+.header-logo img {
+  max-height: 70px;
+  width: auto;
 }
 
 
 /* HERO VIDEO */
 
-.video-hero{
-position:relative;
-width:100%;
-height:100vh;
-min-height:500px;
-overflow:hidden;
+.video-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  overflow: hidden;
 }
 
 
 /* VIDEO */
 
-.video-bg{
-position:absolute;
-top:50%;
-left:50%;
-min-width:100%;
-min-height:100%;
-transform:translate(-50%, -50%);
-object-fit:cover;
-z-index:1;
+.video-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 1;
 }
 
 
 /* OVERLAY */
 
-.video-overlay{
-position:absolute;
-width:100%;
-height:100%;
-background:rgba(0,0,0,0.45);
-z-index:2;
+.video-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 2;
 }
 
 
 /* CONTENT */
 
-.video-content{
-position:relative;
-z-index:3;
-height:100%;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
+.video-content {
+  position: relative;
+  z-index: 3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
 
 
 /* TEXT */
 
-.video-content h1{
-font-size:clamp(2rem, 5vw, 3.5rem);
-margin-bottom:10px;
+.video-content h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 10px;
 }
 
-.video-content p{
-font-size:clamp(1rem, 2vw, 1.4rem);
-margin-bottom:25px;
+.video-content p {
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  margin-bottom: 25px;
 }
 
 
 /* BUTTON */
 
-.video-content button{
-padding:14px 28px;
-font-size:16px;
-border:none;
-background:#ff3c00;
-color:white;
-cursor:pointer;
-border-radius:5px;
-transition:0.3s;
+.video-content button {
+  padding: 14px 28px;
+  font-size: 16px;
+  border: none;
+  background: #ff3c00;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 
-.video-content button:hover{
-background:#ff5a24;
+.video-content button:hover {
+  background: #ff5a24;
 }
 
 
 /* MENU SECTION */
 
-#menu{
-padding:40px 20px;
-min-height:100vh;
-background:white;
-color:black;
+#menu {
+  padding: 40px 20px;
+  min-height: 100vh;
+  background: white;
+  color: black;
 }
 
 
 /* TABLETS */
 
-@media (max-width:900px){
+@media (max-width:900px) {
 
-.video-content h1{
-font-size:2.5rem;
-}
+  .video-content h1 {
+    font-size: 2.5rem;
+  }
 
-.video-content p{
-font-size:1.2rem;
-}
+  .video-content p {
+    font-size: 1.2rem;
+  }
 
-.header-logo img{
-max-height:60px;
-}
+  .header-logo img {
+    max-height: 60px;
+  }
 
 }
 
 
 /* PHONES */
 
-@media (max-width:600px){
+@media (max-width:600px) {
 
-.video-hero{
-height:80vh;
+  .video-hero {
+    height: 80vh;
+  }
+
+  .video-content h1 {
+    font-size: 2rem;
+  }
+
+  .video-content p {
+    font-size: 1rem;
+  }
+
+  .video-content button {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .header-logo img {
+    max-height: 50px;
+  }
+
 }
 
-.video-content h1{
-font-size:2rem;
+.menu-section {
+  width: 100%;
+  padding: 40px 20px;
+  background: white;
+  text-align: center;
+  
 }
 
-.video-content p{
-font-size:1rem;
+.menu-section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: black;
 }
 
-.video-content button{
-padding:12px 20px;
-font-size:14px;
+.menu-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
-.header-logo img{
-max-height:50px;
-}
-
-}
-
-.menu-section{
-  width:100%;
-  padding:40px 20px;
-  background:white;
-  text-align:center;
-}
-
-.menu-section h2{
-  margin-bottom:20px;
-  font-size:2rem;
-}
-
-.menu-container{
-  width:100%;
-  display:flex;
-  justify-content:center;
-}
-
-.menu-container img{
-  width:100%;
-  max-width:900px;
-  height:auto;
-  object-fit:contain;
+.menu-container img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  object-fit: contain;
 }
